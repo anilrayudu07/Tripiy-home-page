@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Tripiy - Your Gateway to Unforgettable Holidays! ✈️
+    </title>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mainbg">
+        <div class="container main-header">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-sm-6">
+                    <div class="row">
+                        <div class="col-md-3 mt-2">
+                            <a href="#"><img src="images/tripiy-logo.png" width="170px"></a>
+                        </div>
+                        <div class=" col-md-8">
+                            <ul class="d-flex menu mt-1 text-white z-index">
+                                <li><a class="dropdown-item bold drop" href="#">Destinations</a></li>
+                                <li><a class="dropdown-item bold drop" href="#">Holiday </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 text-right">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="mobile-num border-end ">
+                            <div class="p-0 m-0 number text-white">
+                                <span class="img-wrap"><img src="images/call-white.png" width="24" class="callicon"
+                                        alt="call icon"></span>+91 6303312676
+                            </div>
+                            <p class="p-0 m-0 time text-white">8am - 9pm (IST)</p>
+                        </div>
+                        <div class="link">
+
+                            <a href="#">
+                                <div class="support text-white">Support</div>
+                            </a>
+
+                        </div>
+                        <div class="sign-in d-flex px-1 justify-content-between align-items-center">
+                            <a href="#" class="d-flex align-items-center"><img src="images/user-icon-white.png"
+                                    width="23px"><span class="sign">Sign-in</span><img src="images/sign-in-icon.png"
+                                    width="18px"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <!-- <video src="./videos/Main-video2.mp4" autoplay muted loop playsinline preload="auto"
+                style="width:100%; height: 450px; object-fit:cover; display: block;">
+            </video> -->
+            <img src="images/main9.png" style="width:100%; height: 450px; object-fit:cover; display: block;">
+            <div class="container block-2 search-form">
+                <div class="d-flex align-items-center justify-content-center search-bar">
+
+                    <!-- Search Input -->
+                    <div class="input-group me-2">
+                        <span class="input-group-text logo">
+                            <img src="images/reverse-tripiy icon.png" width="24px">
+                        </span>
+                        <input type="text" class="form-control" placeholder="Interests / Cities / Countries">
+                    </div>
+
+                    <!-- Duration Input -->
+                    <div class="input-group me-2 position-relative">
+                        <span class="input-group-text">
+                            <img src="images/calendar.png" width="30px">
+                        </span>
+                        <input type="text" id="duration-input" class="form-control" placeholder="1 - 121 Days" readonly>
+
+                        <!-- Popup -->
+                        <div id="duration-popup" class="duration-popup shadow-sm">
+                            <h6 class="fw-semibold mb-2">Days</h6>
+                            <input type="range" id="dayRange" min="1" max="121" value="60" class="form-range">
+                            <div class="d-flex justify-content-between mt-3">
+                                <div>
+                                    <label class="form-label small text-muted">Min day</label>
+                                    <input type="number" id="minDay" value="1"
+                                        class="form-control form-control-sm text-center">
+                                </div>
+                                <div>
+                                    <label class="form-label small text-muted">Max day</label>
+                                    <input type="number" id="maxDay" value="121"
+                                        class="form-control form-control-sm text-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Departure Date -->
+                    <div class="input-group me-2">
+                        <span class="input-group-text">
+                            <img src="images/calendar.png" width="30px">
+                        </span>
+                        <input type="datetime-local" id="valid-to" placeholder="yyyy-mm-dd" name="validTo"
+                            formcontrolname="validTo" class="form-control ng-valid ng-dirty ng-touched"
+                            ng-reflect-name="validTo">
+                    </div>
+
+                    <!-- Search Button -->
+                    <a href="file:///e%3A/Anil/Tripiy-home-page/Packages.html#">
+                        <button class="btn color px-4">
+                            <i class="bi bi-search text"></i> Search
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="tripiy-search-root" class="hero-search-container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+         width: 92%; max-width: 1100px; z-index: 5;">
+            </div>
+
+            
+        </div>
+
+        <!-- fout blocks start -->
+        <div class="container-fluid contcolor">
+            <div class="container  mb-5 ">
+                <div class="row bg">
+                    <div class="col-md-3">
+                        <div class="d-flex align-items-center">
+                            <div class="me-3 pt-2">
+                                <img src="images/rupee.png" width="50px">
+                            </div>
+                            <div class="pt-2 pb-1">
+                                <h6 class="heading">Incredible deals & prices</h6>
+                                <p class="heading2">Curated holiday packages at<br>unbelievable prices.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="d-flex align-items-center">
+                            <div class="me-3">
+                                <img src="images/headphones.png" width="40px">
+                            </div>
+                            <div class="pt-2 pb-1">
+                                <h6 class="heading">Speak to a real person</h6>
+                                <p class="heading2">Our travel consultants are available 7<br> days a week.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="d-flex align-items-center">
+                            <div class="me-3"><img src="images/calc2.png" width="40px"></div>
+                            <div class="pt-2 pb-1">
+                                <h6 class="heading">Flexible payment</h6>
+                                <p class="heading2">Pay for your trip upfront or in<br>instalments before departure.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 d-flex align-items-center">
+                        <div class="d-flex align-items-center">
+                            <div class="me-3"><img src="images/tag.png" width="40px"></div>
+                            <div class="pt-2 pb-1">
+                                <h6 class="heading">Earn & use Tripiy Points</h6>
+                                <p class="heading2">On every travel booking. Earn 3<br>points per ₹1 spent.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fout blocks end -->
+
+        <!-- three-images-start -->
+        <!-- <div class="container mt-4 mb-5 ps-5 pe-5">
+    <div class="row">
+        <div class="col-md-4 ps-0">
+            <div class="first-image">
+              <div class="offer">
+                  <h1 class="img1">Get Free Expert Travel<br> Advice</h1>
+                  <p class="image1" >Advice your way with Tripiy</p>
+                  <a href="#" class="btn btn-dark onebutton" role="button" data-bs-toggle="button">Explore Now</a>  
+              </div>
+           </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="middle-image">
+                 <h1 class="img1">Book today, pay in instalments<br> Today</h1>
+                 <p class="image1">On eligible deals. ₹149 service feeˇ</p>
+                 <a href="#" class="btn btn-dark onebutton" role="button" data-bs-toggle="button">Discover More</a>   
+             </div>
+        </div>
+
+        <div class="col-md-4 pe-0 ">
+            <div class="third-image">
+                <h1 class="img1">Give the gift of travel</h1>
+                <p class="image1">Gift Vouchers now<br>available online</p>
+                <a href="#" class="btn btn-dark onebutton" role="button" data-bs-toggle="button">Explore Now</a>   
+           </div>
+     </div>
+    </div>
+</div> -->
+        <!-- three-images-end -->
+
+
+
+
+        <!-- trending-text-start -->
+
+        <div class="container">
+            <h1 class="pt-2 Trending">Trending Destinations</h1>
+            <p class="Popular">Popular places to recommend for you</p>
+        </div>
+
+        <!-- trending-text-start -->
+
+
+        <!-- 5-images-start -->
+        <div class="container">
+            <div class="row">
+                <div class="col ms-0 ps-0">
+                    <div class="dubai">
+                        <a href="#"><img src="images/dubai.webp" width="100%" class="dubaiimg" alt="Dubai"></a>
+                    </div>
+                    <div class="imgtext"><a href="#" class="imgtext">Dubai</a></div>
+
+                </div>
+
+                <div class="col mx-3">
+                    <div class="dubai">
+                        <a href="#"> <img src="images/Kazakhstan.webp" width="100%" class="dubaiimg"
+                                alt="Kazakhstan"></a>
+                    </div>
+                    <div class="imgtext"><a href="#" class="imgtext">Kazakhstan</a></div>
+                </div>
+
+                <div class="col mx-0">
+                    <div class="dubai">
+                        <a href="#"><img src="images/Georgia.webp" width="100%" class="dubaiimg" alt="Georgia"></a>
+                    </div>
+                    <div class="imgtext"><a href="#" class="imgtext">Georgia</a></div>
+                </div>
+
+                <div class="col mx-2">
+                    <div class="dubai">
+                        <a href="#"><img src="images/Armenia.webp" width="100%" class="dubaiimg" alt="Armenia"></a>
+                    </div>
+                    <div class="imgtext"><a href="#" class="imgtext">Armenia</a></div>
+                </div>
+
+                <div class="col me-0 pe-0">
+                    <div class="dubai">
+                        <a href="#"><img src="images/Azerbaijan.webp" width="100%" class="dubaiimg"
+                                alt="Azerbaijan"></a>
+                    </div>
+                    <div class="imgtext"><a href="#" class="imgtext">Azerbaijan</a></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 5-images-end -->
+
+
+        <div class="container-fluid Geographic ">
+            <div class="container">
+                <h1 class="pt-5 Trending">Geographic Region</h1>
+                <p class="Popular">Explore the world's most diverse destinations by region, each offering unique<br>
+                    experiences and breathtaking landscapes.</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col ms-0 ps-0">
+                            <div class="dubai1">
+                                <a href="#"><img src="images/europe.webp" width="100%" class="dubaiimg"
+                                        alt="Europe"></a>
+                            </div>
+                            <div class="imgtext1"><a href="#" class="imgtext"></a></div>
+                        </div>
+
+                        <div class="col mx-3">
+                            <div class="dubai1">
+                                <a href="#"> <img src="images/south_america.webp" width="100%" class="dubaiimg"
+                                        alt="South America"></a>
+                            </div>
+                            <div class="imgtext1"><a href="#" class="imgtext"></a></div>
+                        </div>
+
+                        <div class="col mx-0">
+                            <div class="dubai1">
+                                <a href="#"><img src="images/north_america.webp" width="100%" class="dubaiimg"
+                                        alt="North America"></a>
+                            </div>
+                            <div class="imgtext1"><a href="#" class="imgtext"></a></div>
+                        </div>
+
+                        <div class="col mx-3">
+                            <div class="dubai1">
+                                <a href="#"><img src="images/asia.webp" width="100%" class="dubaiimg" alt="Asia"></a>
+                            </div>
+                            <div class="imgtext1"><a href="#" class="imgtext"></a></div>
+                        </div>
+
+                        <div class="col me-0 pe-0">
+                            <div class="dubai1">
+                                <a href="#"><img src="images/africa.webp" width="100%" class="dubaiimg"
+                                        alt="Africa"></a>
+                            </div>
+                            <div class="imgtext1"><a href="#" class="imgtext"></a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <h1 class="pt-5 Trending">Trending Themes</h1>
+            <p class="Popular">Popular themes to recommend for you</p>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col ms-0 ps-0">
+                    <div class="dubai">
+                        <a href="#"><img src="images/wildlife_conservation.webp" width="100%" class="dubaiimg"
+                                alt="Wildlife Conservation"></a>
+                    </div>
+                    <div class="imgtext"><a href="#" class="imgtext">Wildlife Conservation</a></div>
+
+                </div>
+
+                <div class="col mx-3">
+                    <div class="dubai">
+                        <a href="#"> <img src="images/relaxation_wellness.webp" width="100%" class="dubaiimg"
+                                alt="Relaxation Wellness"></a>
+                    </div>
+                    <div class="imgtext"><a href="#" class="imgtext">Relaxation Wellness</a></div>
+                </div>
+
+                <div class="col mx-0">
+                    <div class="dubai">
+                        <a href="#"><img src="images/shopping.webp" width="100%" class="dubaiimg" alt="Shopping"></a>
+                    </div>
+                    <div class="imgtext"><a href="#" class="imgtext">Shopping</a></div>
+                </div>
+
+                <div class="col mx-3">
+                    <div class="dubai">
+                        <a href="#"><img src="images/cultural_discovery.webp" width="100%" class="dubaiimg"
+                                alt="Cultural Discovery"></a>
+                    </div>
+                    <div class="imgtext"><a href="#" class="imgtext">Cultural Discovery</a></div>
+                </div>
+
+                <div class="col me-0 pe-0">
+                    <div class="dubai">
+                        <a href="#"><img src="images/adventure_thrill.webp" width="100%" class="dubaiimg"
+                                alt="Adventure Thrill"></a>
+                    </div>
+                    <div class="imgtext"><a href="#" class="imgtext">Adventure Thrill</a></div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="container-fluid Geographic">
+            <div class="container">
+                <h1 class="pt-5 Trending">
+                    Popular Experincences</h1>
+                <p class="Popular">Popular Experincences to recommend for you</p>
+                <div class="container ">
+                    <div class="row">
+                        <div class="col ms-0 ps-0">
+                            <div class="dubai1">
+                                <a href="#"><img src="images/mountain_retreats_new.webp" width="100%" class="dubaiimg">
+                            </div></a>
+                            <div class="imgtext1"><a href="#" class="imgtext"></div></a>
+                        </div>
+
+                        <div class="col mx-3">
+                            <div class="dubai1">
+                                <a href="#"> <img src="images/nature_tranquility.webp" width="100%" class="dubaiimg">
+                            </div></a>
+                            <div class="imgtext1"><a href="#" class="imgtext"></div></a>
+                        </div>
+
+                        <div class="col mx-0">
+                            <div class="dubai1">
+                                <a href="#"><img src="images/beach_escapes.webp" width="100%" class="dubaiimg">
+                            </div></a>
+                            <div class="imgtext1"><a href="#" class="imgtext"></div></a>
+                        </div>
+
+                        <div class="col mx-3">
+                            <div class="dubai1">
+                                <a href="#"><img src="images/romantic_getaways.webp" width="100%" class="dubaiimg">
+                            </div></a>
+                            <div class="imgtext1"><a href="#" class="imgtext"></div></a>
+                        </div>
+
+                        <div class="col me-0 pe-0">
+                            <div class="dubai1">
+                                <a href="#"><img src="images/historical.webp" width="100%" class="dubaiimg">
+                            </div></a>
+                            <div class="imgtext1"><a href="#" class="imgtext"></div></a>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <h1 class="Explore ">Explore By Country</h1>
+            <p class="Popular">Discover great places by country</p>
+        </div>
+
+
+        <div class="container">
+            <div class="row" style="text-align: center;">
+                <div class="col ms-0 ps-0">
+                    <div class="icons">
+                        <a href="#"><img src="images/japan-icon.png" width="80%" class="country-icons">
+                    </div></a>
+                    <div class="icon-text"><a href="#" class="icon-text">Japan</div></a>
+
+                </div>
+
+                <div class="col mx-3">
+                    <div class="icons">
+                        <a href="#"> <img src="images/Mauritius-icon.png" width="100%" class="country-icons">
+                    </div></a>
+                    <div class="icon-text"><a href="#" class="icon-text">Mauritiuss</div></a>
+                </div>
+
+                <div class="col mx-0">
+                    <div class="icons">
+                        <a href="#"><img src="images/Switzerland-icon.png" width="100%" class="country-icons">
+                    </div></a>
+                    <div class="icon-text"><a href="#" class="icon-text">Switzerland</div></a>
+                </div>
+
+                <div class="col mx-3">
+                    <div class="icons">
+                        <a href="#"><img src="images/Maldives-icon.png" width="100%" class="country-icons">
+                    </div></a>
+                    <div class="icon-text"><a href="#" class="icon-text">Maldives</div></a>
+                </div>
+
+                <div class="col me-0 pe-0">
+                    <div class="icons">
+                        <a href="#"><img src="images/Turkey-icon.png" width="100%" class="country-icons">
+                    </div></a>
+                    <div class="icon-text"><a href="#" class="icon-text">Turkey</div></a>
+                </div>
+
+                <div class="col me-0 pe-0">
+                    <div class="icons">
+                        <a href="#"><img src="images/Georgia-icon.png" width="100%" class="country-icons">
+                    </div></a>
+                    <div class="icon-text"><a href="#" class="icon-text">Georgia</div></a>
+                </div>
+
+                <div class="col me-0 pe-0">
+                    <div class="icons">
+                        <a href="#"><img src="images/Kazakhstan-icon.png" width="100%" class="country-icons">
+                    </div></a>
+                    <div class="icon-text"><a href="#" class="icon-text">Kazakhstan</div></a>
+                </div>
+
+                <div class="col me-0 pe-0">
+                    <div class="icons">
+                        <a href="#"><img src="images/U.A.E-icon.png" width="100%" class="country-icons">
+                    </div></a>
+                    <div class="icon-text"><a href="#" class="icon-text">U.A.E</div></a>
+                </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="container-fluid Geographic1">
+            <div class="container mt-4 mb-5">
+                <div class="row">
+                    <div class="col-md-4 ps-0">
+                        <div class="first-image-last">
+                            <div class="offer">
+                                <h1 class="imglast">We Now Offer<br>Cruise Only Deals</h1>
+                                <p class="image1">Cruise your way with Tripiy</p>
+                                <a href="#" class="btn btn-dark onebutton" role="button" data-bs-toggle="button">Explore
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="middle-image-last">
+                            <h1 class="img1">Book today, pay in<br> instalments</h1>
+                            <p class="image1">On eligible deals. ₹149 service feeˇ</p>
+                            <a href="#" class="btn btn-dark onebutton" role="button" data-bs-toggle="button">Discover
+                                More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 pe-0 ">
+                        <div class="third-image-last">
+                            <h1 class="img1">Give the gift of travel</h1>
+                            <p class="image1">Gift Vouchers now<br>available online</p>
+                            <a href="#" class="btn btn-dark onebutton" role="button" data-bs-toggle="button">Learn
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container ps-4 pe-4">
+            <h1 class="Explore ">Explore International</h1>
+            <p class="Popular">Discover great places internationally</p>
+        </div>
+
+
+        <!-- Country cards -->
+        <div class="container ">
+            <div class="row pb-4 ">
+                <div class="container card">
+                    <a href="#" class="card-link">
+                        <div class="card-image">
+                            <img src="images/dubai-round.png" class="card-round-image mb-3">
+                            <h5 class="card-text">Dubai</h5>
+                            <div class="card-tag"></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="container card">
+                    <a href="#" class="card-link">
+                        <div class="card-image">
+                            <img src="images/kazahstan-round.png" class="card-round-image mb-3">
+                            <h5 class="card-text">Kazakhstan</h5>
+                            <div class="card-tag"></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="container card">
+                    <a href="#" class="card-link">
+                        <div class="card-image">
+                            <img src="images/azerbaijan-rounded.png" class="card-round-image mb-3">
+                            <h5 class="card-text">Azerbaijan</h5>
+                            <div class="card-tag"></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="container card">
+                    <a href="#" class="card-link">
+                        <div class="card-image">
+                            <img src="images/georgia-round.png" class="card-round-image mb-3">
+                            <h5 class="card-text">Georgia</h5>
+                            <div class="card-tag"></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="container card">
+                    <a href="#" class="card-link">
+                        <div class="card-image">
+                            <img src="images/singapore-round.png" class="card-round-image mb-3">
+                            <h5 class="card-text">Singapore</h5>
+                            <div class="card-tag"></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="container card">
+                    <a href="#" class="card-link">
+                        <div class="card-image">
+                            <img src="images/Turkey-rounded.png" class="card-round-image mb-3">
+                            <h5 class="card-text">Turkey</h5>
+                            <div class="card-tag"></div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- rounded mini images end -->
+
+        <!-- tripiy footer -->
+        <div class="footer-color">
+            <div class="container footer pt-5 mt-2">
+                <div class="row">
+                    <div class="col-md-3 pt-5 ">
+                        <div CLASS="logo"><a href="#"><img src="images/tripiy-4.png" width="50%"></a></div>
+                        <div class="col ">
+                            <ul class="nav flex-column text-black">
+                                <li class="nav-item mb-2"><a href="https://www.facebook.com/tripiyholidays"
+                                        class="nav-link p-0 footer-text-social">Facebook </a></li>
+                                <li class="nav-item mb-2"><a href="https://www.instagram.com/tripiyholidays/"
+                                        class="nav-link p-0 footer-text-social">Instagram </a></li>
+                                <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text-social">Twitter
+                                    </a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text-social">Youtube
+                                    </a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 pt-5">
+                        <div CLASS="Policy text-black">Policy</div>
+                        <div class="col">
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Frequently asked
+                                        questions </a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Terms and
+                                        Conditions </a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Privacy </a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Cancellation
+                                        Policy </a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Sitemap </a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Contact Us </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 pt-5 pb-5">
+                        <div CLASS="Policy text-black">Tripiy</div>
+                        <div class="col">
+                            <ul class="nav flex-column ">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">About Us </a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Careers </a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Blog </a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Testimonials </a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Visa </a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Press </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 pt-5">
+                        <div CLASS="Policy text-black">Talk to Us</div>
+                        <div class="col">
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">info@tripiy.com
+                                    </a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">+91 934680 8989
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- tripiy footer -->
+
+
+
+
+
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            const dateInput = document.querySelector('#departure-date');
+            dateInput.addEventListener('click', function () {
+                if (this.showPicker) {
+                    this.showPicker(); // Opens native calendar automatically
+                }
+            });
+        </script>
+        <script>
+            const durationInput = document.getElementById('duration-input');
+            const popup = document.getElementById('duration-popup');
+            const minDay = document.getElementById('minDay');
+            const maxDay = document.getElementById('maxDay');
+            const range = document.getElementById('dayRange');
+
+            // Toggle popup
+            durationInput.addEventListener('click', (e) => {
+                popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+            });
+
+            // Hide when clicked outside
+            document.addEventListener('click', (e) => {
+                if (!popup.contains(e.target) && e.target !== durationInput) {
+                    popup.style.display = 'none';
+                }
+            });
+
+            // Sync range with maxDay
+            range.addEventListener('input', () => {
+                maxDay.value = range.value;
+                durationInput.value = `${minDay.value} - ${maxDay.value} Days`;
+            });
+
+            // Update when numbers change
+            [minDay, maxDay].forEach(el => {
+                el.addEventListener('input', () => {
+                    if (parseInt(maxDay.value) < parseInt(minDay.value)) {
+                        maxDay.value = minDay.value;
+                    }
+                    range.value = maxDay.value;
+                    durationInput.value = `${minDay.value} - ${maxDay.value} Days`;
+                });
+            });
+        </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Tripiy website</title>
+  <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+  <link href="css/styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="mainbg main-sub-bg ">
+    <div class="container main-header sub-header">
+      <div class="row align-items-center">
+        <div class="col-md-6 col-sm-6">
+          <div class="row">
+            <div class="col-md-3 mt-2">
+              <a href="file:///e%3A/Anil/Tripiy-home-page/index.html"><img src="images/tripiy-4.png" width="160px"></a>
+            </div>
+            <div class="col-md-8">
+              <ul class="d-flex menu z-index">
+                <li><a class="dropdown-item bold drop drop2" href="#">Destinations</a></li>
+                <li><a class="dropdown-item bold drop drop2" href="#">Holiday </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 text-right">
+          <div class="d-flex justify-content-end align-items-center">
+            <div class="mobile-num border-end ">
+              <div class="p-0 m-0 number ">
+                <span class="img-wrap"></span>+91 9346808989
+              </div>
+              <p class="p-0 m-0 time">8am - 9pm (IST)</p>
+            </div>
+            <div class="link">
+              <a href="#">
+                <div class="support">Support</div>
+              </a>
+            </div>
+            <div class="sign-in sign-in-2 d-flex px-1 justify-content-between align-items-center">
+              <a href="#" class="d-flex align-items-center"><img src="images/user-icon-white.png" width="23px"><span
+                  class="sign">Sign-in</span><img src="images/sign-in-icon.png" width="18px"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid search-background pt-4 pb-4">
+      <div class="container block-2 search-form search-form-2">
+        <div class="d-flex align-items-center justify-content-center search-bar">
+
+          <!-- Search Input -->
+          <div class="input-group me-2">
+            <span class="input-group-text logo">
+              <img src="images/reverse-tripiy icon.png" width="24px">
+            </span>
+            <input type="text" class="form-control" placeholder="Interests / Cities / Countries">
+          </div>
+
+          <!-- Duration Input -->
+          <div class="input-group me-2 position-relative">
+            <span class="input-group-text">
+              <img src="images/calendar.png" width="30px">
+            </span>
+            <input type="text" id="duration-input" class="form-control" placeholder="1 - 121 Days" readonly>
+
+            <!-- Popup -->
+            <div id="duration-popup" class="duration-popup shadow-sm">
+              <h6 class="fw-semibold mb-2">Days</h6>
+              <input type="range" id="dayRange" min="1" max="121" value="60" class="form-range">
+              <div class="d-flex justify-content-between mt-3">
+                <div>
+                  <label class="form-label small text-muted">Min day</label>
+                  <input type="number" id="minDay" value="1" class="form-control form-control-sm text-center">
+                </div>
+                <div>
+                  <label class="form-label small text-muted">Max day</label>
+                  <input type="number" id="maxDay" value="121" class="form-control form-control-sm text-center">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Departure Date -->
+          <div class="input-group me-2">
+            <span class="input-group-text">
+              <img src="images/calendar.png" width="30px">
+            </span>
+            <input type="datetime-local" id="valid-to" placeholder="yyyy-mm-dd" name="validTo" formcontrolname="validTo"
+              class="form-control ng-valid ng-dirty ng-touched" ng-reflect-name="validTo">
+          </div>
+          <!-- Search Button -->
+          <a href="#">
+            <button class="btn color px-4 z-index">
+              <i class="bi bi-search text"></i> Search
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container  ">
+      <h1 class="pt-4 pb-4 Trending2">Packages</h1>
+    </div>
+
+
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card2 border">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+              </div>
+              <a href="#">
+                <div class="carousel-inner">
+                  <div class="carousel-item active slide-image">
+                    <img src="images/Kaindy-lake.png" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item slide-image">
+                    <img src="images/almaty1.png" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item slide-image">
+                    <img src="images/almaty2.png" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item slide-image">
+                    <img src="images/almaty3.png" class="d-block w-100">
+                  </div>
+                </div>
+              </a>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body p-3 pb-4">
+              <h5 class="card-title pb-3 mt-2">Kazakhstan</h5>
+              <div class="d-flex">
+                <div class="card3 inner-card me-3 border">
+                  <a href="#" class="d-block h-100 p-1 text-center">
+                    <span class="badge text-black text-bg-secondary">4 Nights</span></h5>
+                    <h5 class="inner-card-text ms-2 mt-1 text-black">from...</h5>
+                    <h3 class="inner-card-text1 ms-2 text-black">₹18000 <img src="images/next.png"
+                        class="inner-card-next"></h3>
+                    <h6 class="inner-card-text2 ms-2 ">Offer</h6>
+                  </a>
+                </div>
+
+                <div class="card3 inner-card me-3 border">
+                  <a href="#" class="d-block h-100 p-1 text-center">
+                    <span class="badge text-black text-bg-secondary">5 Nights</span></h5>
+                    <h5 class="inner-card-text ms-2 mt-1 text-black">from...</h5>
+                    <h3 class="inner-card-text1 ms-2 text-black">₹21500 <img src="images/next.png"
+                        class="inner-card-next"></h3>
+                    <h6 class="inner-card-text2 ms-2 ">Offer</h6>
+                  </a>
+                </div>
+
+                <div class="card3 inner-card border">
+                  <a href="#" class="d-block h-100 p-1 text-center">
+                    <span class="badge text-black text-bg-secondary">6 Nights</span></h5>
+                    <h5 class="inner-card-text ms-2 mt-1 text-black">from...</h5>
+                    <h3 class="inner-card-text1 ms-2 text-black">₹25200 <img src="images/next.png"
+                        class="inner-card-next"></h3>
+                    <h6 class="inner-card-text2 ms-2 ">Offer</h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card2 border">
+            <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+              </div>
+              <a href="#">
+                <div class="carousel-inner">
+                  <div class="carousel-item active slide-image">
+                    <img src="images/4.jpg" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item slide-image">
+                    <img src="images/dubai-muesum.png" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item slide-image">
+                    <img src="images/dubai-car-world.png" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item slide-image">
+                    <img src="images/dxb.png" class="d-block w-100">
+                  </div>
+                </div>
+              </a>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body p-3 pb-4">
+              <h5 class="card-title pb-3 mt-2">Dubai</h5>
+              <div class="d-flex">
+                <div class="card3 inner-card me-3 border">
+                  <a href="#" class="d-block h-100 p-1 text-center">
+                    <span class="badge text-black text-bg-secondary">4 Nights</span></h5>
+                    <h5 class="inner-card-text ms-2 mt-1 text-black">from...</h5>
+                    <h3 class="inner-card-text1 ms-2 text-black">₹15500 <img src="images/next.png"
+                        class="inner-card-next"></h3>
+                    <h6 class="inner-card-text2 ms-2 ">Offer</h6>
+                  </a>
+                </div>
+
+                <div class="card3 inner-card me-3 border">
+                  <a href="#" class="d-block h-100 p-1 text-center">
+                    <span class="badge text-black text-bg-secondary">5 Nights</span></h5>
+                    <h5 class="inner-card-text ms-2 mt-1 text-black">from...</h5>
+                    <h3 class="inner-card-text1 ms-2 text-black">₹19000 <img src="images/next.png"
+                        class="inner-card-next"></h3>
+                    <h6 class="inner-card-text2 ms-2 ">Offer</h6>
+                  </a>
+                </div>
+
+                <div class="card3 inner-card border">
+                  <a href="#" class="d-block h-100 p-1 text-center">
+                    <span class="badge text-black text-bg-secondary">6 Nights</span></h5>
+                    <h5 class="inner-card-text ms-2 mt-1 text-black">from...</h5>
+                    <h3 class="inner-card-text1 ms-2 text-black">₹22500 <img src="images/next.png"
+                        class="inner-card-next"></h3>
+                    <h6 class="inner-card-text2 ms-2 ">Offer</h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card2 border">
+            <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+              </div>
+              <a href="#">
+                <div class="carousel-inner">
+                  <div class="carousel-item active slide-image">
+                    <img src="images/bali1.png" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item slide-image">
+                    <img src="images/bali2.png" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item slide-image">
+                    <img src="images/bali3.png" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item slide-image">
+                    <img src="images/bali4.png" class="d-block w-100">
+                  </div>
+                </div>
+              </a>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body p-3 pb-4">
+              <h5 class="card-title pb-3 mt-2">Bali</h5>
+              <div class="d-flex">
+                <div class="card3 inner-card me-3 border">
+                  <a href="#" class="d-block h-100 text-center">
+                    <span class="badge text-black text-bg-secondary ">4 Nights</span></h5>
+                    <h5 class="inner-card-text ms-2 mt-1 text-black">from...</h5>
+                    <h3 class="inner-card-text1 ms-2 text-black">₹22570 <img src="images/next.png"
+                        class="inner-card-next"></h3>
+                    <h6 class="inner-card-text2 ms-2 ">Offer</h6>
+                  </a>
+                </div>
+
+                <div class="card3 inner-card me-3 border">
+                  <a href="#" class="d-block h-100 p-1 text-center">
+                    <span class="badge text-black text-bg-secondary">5 Nights</span></h5>
+                    <h5 class="inner-card-text ms-2 mt-1 text-black">from...</h5>
+                    <h3 class="inner-card-text1 ms-2 text-black">₹28030 <img src="images/next.png"
+                        class="inner-card-next"></h3>
+                    <h6 class="inner-card-text2 ms-2 ">Offer</h6>
+                  </a>
+                </div>
+
+                <div class="card3 inner-card border">
+                  <a href="#" class="d-block h-100 p-1 text-center">
+                    <span class="badge text-black text-bg-secondary">6 Nights</span></h5>
+                    <h5 class="inner-card-text ms-2 mt-1 text-black">from...</h5>
+                    <h3 class="inner-card-text1 ms-2 text-black">₹32870 <img src="images/next.png"
+                        class="inner-card-next"></h3>
+                    <h6 class="inner-card-text2 ms-2 ">Offer</h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card2 border">
+            <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+              </div>
+              <a href="#">
+                <div class="carousel-inner">
+                  <div class="carousel-item active slide-image">
+                    <img src="images/turkey1.jpg" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item slide-image">
+                    <img src="images/turkey2.jpg" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item slide-image">
+                    <img src="images/turkey3.jpg" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item slide-image">
+                    <img src="images/turkey4.jpg" class="d-block w-100">
+                  </div>
+                </div>
+              </a>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body p-3 pb-4">
+              <h5 class="card-title pb-3 mt-2">Turkey</h5>
+              <div class="d-flex">
+                <div class="card3 inner-card me-3 border">
+                  <a href="#" class="d-block h-100 p-1 text-center">
+                    <span class="badge text-black text-bg-secondary">6 Nights</span></h5>
+                    <h5 class="inner-card-text ms-2 mt-1 text-black">from...</h5>
+                    <h3 class="inner-card-text1 ms-2 text-black">₹57000 <img src="images/next.png"
+                        class="inner-card-next"></h3>
+                    <h6 class="inner-card-text2 ms-2 ">Offer</h6>
+                  </a>
+                </div>
+
+                <div class="card3 inner-card me-3 border">
+                  <a href="#" class="d-block h-100 p-1 text-center">
+                    <span class="badge text-black text-bg-secondary">7 Nights</span></h5>
+                    <h5 class="inner-card-text ms-2 mt-1 text-black">from...</h5>
+                    <h3 class="inner-card-text1 ms-2 text-black">₹62000 <img src="images/next.png"
+                        class="inner-card-next"></h3>
+                    <h6 class="inner-card-text2 ms-2 ">Offer</h6>
+                  </a>
+                </div>
+
+                <!-- <div class="card3 inner-card border">
+                  <a href="#" class="d-block h-100 p-1 text-center">
+                    <span class="badge text-black text-bg-secondary">6 Nights</span></h5>
+                    <h5 class="inner-card-text ms-2 mt-1 text-black">from...</h5>
+                    <h3 class="inner-card-text1 ms-2 text-black">₹25200 <img src="images/next.png"
+                        class="inner-card-next"></h3>
+                    <h6 class="inner-card-text2 ms-2 ">Offer</h6>
+                  </a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card2 border">
+            <div id="carouselExampleIndicators4" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+              </div>
+              <a href="#">
+                <div class="carousel-inner">
+                  <div class="carousel-item active slide-image">
+                    <img src="images/Georgia1.jpg" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item slide-image">
+                    <img src="images/Georgia2.jpg" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item slide-image">
+                    <img src="images/Georgia3.jpg" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item slide-image">
+                    <img src="images/Georgia4.jpg" class="d-block w-100">
+                  </div>
+                </div>
+              </a>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4"
+                data-bs-slide="next">
+                <spa n class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body p-3 pb-4">
+              <h5 class="card-title pb-3 mt-2">Georgia</h5>
+              <div class="d-flex">
+                <div class="card3 inner-card me-3 border">
+                  <a href="#" class="d-block h-100 p-1 text-center">
+                    <span class="badge text-black text-bg-secondary">6 Nights</span></h5>
+                    <h5 class="inner-card-text ms-2 mt-1 text-black">from...</h5>
+                    <h3 class="inner-card-text1 ms-2 text-black">₹75000 <img src="images/next.png"
+                        class="inner-card-next"></h3>
+                    <h6 class="inner-card-text2 ms-2 ">Offer</h6>
+                  </a>
+                </div>
+
+                <div class="card3 inner-card me-3 border">
+                  <a href="#" class="d-block h-100 p-1 text-center">
+                    <span class="badge text-black text-bg-secondary">5 Nights</span></h5>
+                    <h5 class="inner-card-text ms-2 mt-1 text-black">from...</h5>
+                    <h3 class="inner-card-text1 ms-2 text-black">₹19000 <img src="images/next.png"
+                        class="inner-card-next"></h3>
+                    <h6 class="inner-card-text2 ms-2 ">Offer</h6>
+                  </a>
+                </div>
+
+                <div class="card3 inner-card border">
+                  <a href="#" class="d-block h-100 p-1 text-center">
+                    <span class="badge text-black text-bg-secondary">6 Nights</span></h5>
+                    <h5 class="inner-card-text ms-2 mt-1 text-black">from...</h5>
+                    <h3 class="inner-card-text1 ms-2 text-black">₹22500 <img src="images/next.png"
+                        class="inner-card-next"></h3>
+                    <h6 class="inner-card-text2 ms-2 ">Offer</h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card2 border">
+            <div id="carouselExampleIndicators5" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+              </div>
+              <a href="#">
+                <div class="carousel-inner">
+                  <div class="carousel-item active slide-image">
+                    <img src="images/srilanka1.jpg" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item slide-image">
+                    <img src="images/srilanka2.jpg" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item slide-image">
+                    <img src="images/srilanka3.jpg" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item slide-image">
+                    <img src="images/srilanka4.jpg" class="d-block w-100">
+                  </div>
+                </div>
+              </a>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators5"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body p-3 pb-4">
+              <h5 class="card-title pb-3 mt-2">Sri Lanka</h5>
+              <div class="d-flex">
+                <div class="card3 inner-card me-3 border">
+                  <a href="#" class="d-block h-100 p-1 text-center">
+                    <span class="badge text-black text-bg-secondary ">4 Nights</span></h5>
+                    <h5 class="inner-card-text ms-2 mt-1 text-black">from...</h5>
+                    <h3 class="inner-card-text1 ms-2 text-black">₹30999 <img src="images/next.png"
+                        class="inner-card-next"></h3>
+                    <h6 class="inner-card-text2 ms-2 ">Offer</h6>
+                  </a>
+                </div>
+
+                <div class="card3 inner-card me-3 border">
+                  <a href="#" class="d-block h-100 p-1 text-center">
+                    <span class="badge text-black text-bg-secondary">5 Nights</span></h5>
+                    <h5 class="inner-card-text ms-2 mt-1 text-black">from...</h5>
+                    <h3 class="inner-card-text1 ms-2 text-black">₹35999 <img src="images/next.png"
+                        class="inner-card-next"></h3>
+                    <h6 class="inner-card-text2 ms-2 ">Offer</h6>
+                  </a>
+                </div>
+
+                <div class="card3 inner-card border">
+                  <a href="#" class="d-block h-100 p-1 text-center">
+                    <span class="badge text-black text-bg-secondary">6 Nights</span></h5>
+                    <h5 class="inner-card-text ms-2 mt-1 text-black">from...</h5>
+                    <h3 class="inner-card-text1 ms-2 text-black">₹41999 <img src="images/next.png"
+                        class="inner-card-next"></h3>
+                    <h6 class="inner-card-text2 ms-2 ">Offer</h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- tripiy footer -->
+    <div class="footer-color">
+      <div class="container footer pt-5 mt-2">
+        <div class="row">
+          <div class="col-md-3 pt-5">
+            <div CLASS="logo"><a href="#"><img src="images/tripiy-4.png" width="50%"></a></div>
+            <div class="col">
+              <ul class="nav flex-column text-black">
+                <li class="nav-item mb-2"><a href="https://www.facebook.com/tripiyholidays"
+                    class="nav-link p-0 footer-text-social">Facebook </a></li>
+                <li class="nav-item mb-2"><a href="https://www.instagram.com/tripiyholidays/"
+                    class="nav-link p-0 footer-text-social">Instagram </a></li>
+                <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text-social">Twitter </a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text-social">Youtube </a></li> -->
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 pt-5">
+            <div CLASS="Policy text-black">Policy</div>
+            <div class="col">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Frequently asked questions </a>
+                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Terms and Conditions </a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Privacy </a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Cancellation Policy </a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Sitemap </a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Contact Us </a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 pt-5 pb-5">
+            <div CLASS="Policy text-black">Tripiy</div>
+            <div class="col">
+              <ul class="nav flex-column ">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">About Us </a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Careers </a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Blog </a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Testimonials </a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Visa </a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Press </a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 pt-5">
+            <div CLASS="Policy text-black">Talk to Us</div>
+            <div class="col">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">info@tripiy.com </a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">+91 934680 8989 </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- tripiy footer -->
+
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      const dateInput = document.querySelector('#departure-date');
+      dateInput.addEventListener('click', function () {
+        if (this.showPicker) {
+          this.showPicker(); // Opens native calendar automatically
+        }
+      });
+    </script>
+    <script>
+      const durationInput = document.getElementById('duration-input');
+      const popup = document.getElementById('duration-popup');
+      const minDay = document.getElementById('minDay');
+      const maxDay = document.getElementById('maxDay');
+      const range = document.getElementById('dayRange');
+
+      // Toggle popup
+      durationInput.addEventListener('click', (e) => {
+        popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+      });
+
+      // Hide when clicked outside
+      document.addEventListener('click', (e) => {
+        if (!popup.contains(e.target) && e.target !== durationInput) {
+          popup.style.display = 'none';
+        }
+      });
+
+      // Sync range with maxDay
+      range.addEventListener('input', () => {
+        maxDay.value = range.value;
+        durationInput.value = `${minDay.value} - ${maxDay.value} Days`;
+      });
+
+      // Update when numbers change
+      [minDay, maxDay].forEach(el => {
+        el.addEventListener('input', () => {
+          if (parseInt(maxDay.value) < parseInt(minDay.value)) {
+            maxDay.value = minDay.value;
+          }
+          range.value = maxDay.value;
+          durationInput.value = `${minDay.value} - ${maxDay.value} Days`;
+        });
+      });
+    </script>
+</body>
+
+</html>
